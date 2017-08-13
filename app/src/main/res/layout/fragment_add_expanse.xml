@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.accountmanagement.AddExpanseFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/addExpanse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="הוספת הוצאה"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="סוג הוצאה" />
+
+            <Spinner
+                android:id="@+id/listAllexpanseTypeSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/descrepionET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="פירוט"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/dayInMonthET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="יום ההוצאה"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/MethodsOfPaymentTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:elevation="0dp"
+                android:text="אמצעי תשלום" />
+
+            <Spinner
+                android:id="@+id/MethodsOfPaymentSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/amountET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:ems="10"
+                android:hint="סכום ההוצאה"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:text="הוסף"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+</LinearLayout>
